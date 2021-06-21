@@ -5,4 +5,12 @@ import java.util.Scanner;
 public class Account {
   Scanner input = new Scanner(System.in);
   DecimalFormat moneyFormat = new DecimalFormat("'$'###,##0.00");
-  private int customerNumber
+  private int customerNumber;
+  private int pinNumber;
+  private double checkingBalance;
+  private double savingBalance;
+  
+  public int setCustomerNumber(int customerNumber) {
+    this.customerNumber = customerNumber;
+    return customerNumber;
+  
